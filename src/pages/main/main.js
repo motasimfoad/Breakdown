@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import '../main/main.css';
+import { Button } from 'react-bootstrap';
 
 class Main extends Component {
   render() {
@@ -10,7 +11,9 @@ class Main extends Component {
             <meta charSet="utf-8" />
             <title>Main Page</title>
         </Helmet>
-        Main Page
+        Main Page <br />
+        go to <a href="http://localhost:3000/auth">http://localhost:3000/auth</a>  to see another page <br />
+        <Button bsStyle="success">Primary</Button>
       </div>
     );
   }
