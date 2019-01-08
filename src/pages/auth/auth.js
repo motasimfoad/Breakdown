@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import '../auth/auth.css';
+import { Button } from 'reactstrap';
 
 class Auth extends Component {
   render() {
@@ -10,7 +11,8 @@ class Auth extends Component {
             <meta charSet="utf-8" />
             <title>Auth Page</title>
         </Helmet>
-        Auth Page
+        Auth Page <br />
+        <Button color="success">Danger!</Button>
       </div>
     );
   }
