@@ -13,7 +13,7 @@ class Main extends Component {
         </Helmet>
         Main Page <br />
         go to <a href="http://localhost:3000/auth">http://localhost:3000/auth</a>  to see another page <br />
-        <Button bsStyle="success">Primary</Button>
+        <Button bsStyle="success">React Bootstrap</Button>
       </div>
     );
   }

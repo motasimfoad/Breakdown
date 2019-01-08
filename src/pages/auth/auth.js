@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import '../auth/auth.css';
 import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom'
 
 class Auth extends Component {
   render() {
@@ -12,7 +13,8 @@ class Auth extends Component {
             <title>Auth Page</title>
         </Helmet>
         Auth Page <br />
-        <Button color="success">Danger!</Button>
+        <Link to="/dashboard">Dashboard to see mdl</Link> <br />
+        <Button color="success">React Strap</Button>
       </div>
     );
   }
