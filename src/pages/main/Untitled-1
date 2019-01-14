@@ -5,7 +5,6 @@
             </Col>
             <Col xs={5} sm={5} md={5} className="text">
             <h2><b>GET PRODUCTIVE</b>
-            <FontAwesomeIcon icon={faArrowDown} />
           </h2><br />
             <a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a> <br />
             {/* <Button bsStyle="success">React Bootstrap</Button> */}
