@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import '../main/main.css';
-import { Button } from 'react-bootstrap';
+// import {Grid,Row,Col } from 'react-bootstrap';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faArrowDown } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faArrowDown);
 
 class Main extends Component {
   render() {
     return (
-      <div className="main_demo">
-        <Helmet>
+      <div>
+           <Helmet>
             <meta charSet="utf-8" />
-            <title>Main Page</title>
+            <title>Main</title>
         </Helmet>
-        Main Page <br />
-        go to <a href="http://localhost:3000/auth">http://localhost:3000/auth</a>  to see another page <br />
-        <Button bsStyle="success">React Bootstrap</Button>
+        <div className="big p">
+          brac
+        </div>
+        <div className="box">
+          .jbsjbzlbvlzszl/xnkgbnlxjblb
+        </div>
+        <div className="small parallax">
+          brac
+        </div>
       </div>
+     
+
+       
+      
     );
   }
 }
