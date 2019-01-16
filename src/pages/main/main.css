@@ -58,3 +58,47 @@ div a:hover{
     padding-top: 280px;
     color: #405867
 }
+.f{
+    background-color: #2e3c44;
+    height:80px;
+    padding-top:2.5%;
+    color: #b1b3ac;
+}
+.fl{
+    background-color: #2e3c44;
+    height:80px;
+    padding-top: 2%;
+    text-align: center;
+}
+.socialicon{
+    background-color: #2e3c44;
+    height:80px;
+    padding-top:1%;
+    color: #ffffff;
+}
+ul{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    width: 200px;
+    float: right;
+  }
+  ul li{
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    margin: 10px;
+    height: 80%;
+    padding-top:2%;
+    color: #ffffff;
+  }
+  ul li a{
+    text-decoration: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+  }
