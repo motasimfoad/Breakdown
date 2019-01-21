@@ -4,10 +4,10 @@
     background-size: cover;
     overflow: hidden;
     width: 100%;
-    height: 670px;  
+    height: 100vh;  
     text-align: center;
     text-decoration: none;
-    padding-top: 30px;
+    padding-top: 2%;
     
 /* parallax */
     background-attachment: fixed;
@@ -15,15 +15,38 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.text{
+.abc{
+    background-color: aquamarine;
+    text-align: center;
+    margin: 0%;
+}
+.ls{
     color: #eef2e0;
     padding-top: 8%;
-    padding-left: 52%;  
+    padding-left: 5%;  
     line-height: .01;
-    /* background-color: #405867; */
+    /* background-color: #297aac; */
     text-decoration: none;
     text-align: left;
-} 
+    height: 40vh;;
+}
+.icon{
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #405867;
+}
+.pic{
+    width: 22vw;
+    text-align: center;
+    /* background-color: #674065; */
+}
+.col-xs-12 .col-sm-12{
+    text-align: center;
+}
+
 div a{
     color: #eef2e0;
     text-decoration: none;
@@ -50,19 +73,13 @@ div a:hover{
 .small h2,p{
     color: #405867;
     text-align: center;
-    
 }
 .foot{
     padding: 0%;
     height: 5em;
     background-color: #2e3c44;    
 }
-.icon{
-    font-size: 50px;
-    position: bottom;
-    padding-top: 280px;
-    color: #405867
-}
+
 .f{
     background-color: #2e3c44;
     font-size: 1em;
@@ -109,8 +126,6 @@ ul{
     line-height: 30px;
     font-size: 20px;
   }
-
-  .pic{
-      
-      width: 6vw;
-  }
+.img{
+    width: 15vw;
+}
