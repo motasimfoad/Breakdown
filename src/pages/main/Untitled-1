@@ -1,0 +1,35 @@
+ <Row className="row">
+          <Col xs={12} sm={12} md={12} className="container-fluid">
+            <div  className="main">
+            <Col xs={4} sm={4} md={4} className="">
+            </Col>
+            <Col xs={5} sm={5} md={5} className="text">
+            <h2><b>GET PRODUCTIVE</b>
+          </h2><br />
+            <a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a> <br />
+            {/* <Button bsStyle="success">React Bootstrap</Button> */}
+            
+            </Col>
+            <Col xs={2} sm={2} md={2} className="">
+            </Col>
+            </div>
+          </Col>
+
+          <a href="https://www.facebook.com/okrittim" className="fb">
+            <FontAwesomeIcon icon={['fab', 'faAngleDown']} />
+          </a>   
+
+          <Col xs={12} sm={12} md={12}>
+            <div className="about">
+              <h1>About Us</h1>
+              <Col xs={2} sm={2} md={2} className="">
+              </Col>
+              <Col xs={8} sm={8} md={8} className="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit
+              </p>
+              </Col>
+              <Col xs={2} sm={2} md={2} className="">
+              </Col>
+            </div>
+          </Col>
+        </Row>
