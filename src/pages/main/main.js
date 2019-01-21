@@ -48,7 +48,7 @@ class Main extends Component {
                 <code>{'<Col xs={6} md={4} />'}</code>
               </Col>
               <Col xs={6} md={4}>
-                <code>{'<Col xs={6} md={4} />'}</code>
+                {/* <code>{'<Col xs={6} md={4} />'}</code> */}
               </Col>
               <Col xsHidden md={4}>
                 <code>{'<Col xsHidden md={4} />'}</code>
