@@ -45,14 +45,16 @@ class Main extends Component {
             {/* </a> */}
         
 
-    <footer>
-      <div className="foot col-xs-12 col-sm-12 col-md-12">
+    <div>
+      <div>
       <div className="col-xs-4 col-sm-4 col-md-4 f">
       &copy; 2019 All rights reserved.
       </div>
+
       <div className="col-xs-4 col-sm-4 col-md-4 fl">
       <img src={img} className="pic" alt="" />       
       </div>
+      
       <div className="col-xs-4 col-sm-4 col-md-4 socialicon">
       <ul>
       <li>
@@ -76,7 +78,8 @@ class Main extends Component {
       </div>
       </div>
     
-    </footer>
+    </div>
+
       </div>
     );
   }
