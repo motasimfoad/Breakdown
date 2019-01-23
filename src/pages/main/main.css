@@ -15,11 +15,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media only screen and (max-width: 600px) {
-    Col {
-      background-color: lightblue;
-    }
-}
 .abc{
     background-color: aquamarine;
     text-align: center;
@@ -134,3 +129,46 @@ ul{
 .img{
     width: 15vw;
 }
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .ls {
+        text-align: center;
+        /* padding-top: 5em; */
+        width: 100%;
+        }
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .ls {
+        text-align: center;
+        background-color: aqua;
+        }
+    h2{
+        font-size: 5em;
+        color: #2e3c44;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .ls {
+        text-align: center;
+        }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .ls {
+        text-align: left;
+        }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .ls {
+        text-align: left;
+        }
+  }
+  
