@@ -29,7 +29,6 @@ class Main extends Component {
             <Col md={6} mdPush={6} className="ls">
             <h2><b>GET PRODUCTIVE</b></h2><br />
               <a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a> <br />
-           
             </Col>
             <Col md={6} mdPull={6}>
             </Col>
@@ -48,7 +47,7 @@ class Main extends Component {
                 <code>{'<Col xs={6} md={4} />'}</code>
               </Col>
               <Col xs={6} md={4}>
-                {/* <code>{'<Col xs={6} md={4} />'}</code> */}
+                
               </Col>
               <Col xsHidden md={4}>
                 <code>{'<Col xsHidden md={4} />'}</code>
