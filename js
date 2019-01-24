@@ -53,6 +53,8 @@ class Main extends Component {
               <Col xsHidden md={3}>
               </Col>
             </Row>
+        
+
     <div>
       <div>
       <div className="col-xs-4 col-sm-4 col-md-4 f">
@@ -94,3 +96,4 @@ class Main extends Component {
 }
 
 export default Main;
+
