@@ -66,13 +66,20 @@ div a:hover{
 .about{
     text-align: center;
 }
-.col-xs-12 .col-sm-12{
-    text-align: center;
+/* footer */
+.footer{
+    width: 100%;
+    height: 9vh;
+    margin: 0%;
+    color: #b1b3ac;;
+    background-color: #333a3d;
+    top: 0;
+    bottom: 0;
 }
-.foot{
-    padding: 0%;
-    height: 5em;
-    background-color: #2e3c44;    
+.img{
+    width: 12vw;
+    height: 6vh;
+    padding-top: 4%;
 }
 
 .f{
@@ -100,7 +107,6 @@ ul{
     margin: 0%;
     border: 0%;
     width: 200px;
-    float: right;
   }
   ul li{
     text-decoration: none;
@@ -110,6 +116,7 @@ ul{
     height: 80%;
     padding-top:2%;
     color: #ffffff;
+    text-align: center;
   }
   ul li a{
     text-decoration: none;
@@ -117,18 +124,15 @@ ul{
     width: 30px;
     height: 30px;
     display: block;
-    text-align: center;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 20px; 
   }
-.img{
-    width: 15vw;
-}
+
 /* responsive */
 @media only screen and (max-width: 600px) {
     .ls {
         text-align: center;
-        padding-top: 15em;
+        padding-top: 10em;
         width: 100%;
     } 
     div a{
@@ -141,6 +145,39 @@ ul{
         color: #ff8c00;
         line-height: .01;
     }
+    .footer{
+        height: 4em;
+    }
+    .f1{
+        color: #b1b3ac; 
+        height: 4em; 
+        background-color:#2e3c44;
+    }
+    .img{
+        width: 8em;
+        height: 3em;
+    }
+    .f2{
+        background-color: #2e3c44;  
+        height: 4em;
+        padding-left: 0%; 
+
+    }
+    .f2 a{
+        color: #eef2e0;
+    }
+    .f2 a:hover{
+        color: #ff8c00;
+    }
+    .f3{
+        height: 4em; 
+        color: #eef2e0;
+        background-color: #2e3c44;
+        padding-top: 2.5%;
+        text-align: center;
+        font-size: 13px;
+    }
+   
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -159,6 +196,42 @@ ul{
         color: #ff8c00;
         line-height: .01;
     }
+    .footer{
+        background-color: #ff8c00;
+        height: 4em; 
+    }
+    .f1{
+        color: #b1b3ac; 
+        text-align: center;
+        height: 4em; 
+        background-color: #2e3c44;
+        padding-top: 0;
+    }
+    .img{
+        width: 10em;
+        height: 4em;
+        padding: 1em 0;
+    }
+    .f2{
+        height: 4em; 
+        background-color: #2e3c44;  
+        padding-left: 2em;
+    }
+    .f2 a{
+        color: #eef2e0;
+    }
+    .f2 a:hover{
+        color: #ff8c00;
+    }
+    .f3{
+        text-align: center;
+        color: #eef2e0;
+        background-color: #2e3c44;
+        height: 4em;
+        padding-top: 2.5%;
+        font-size: 14px;
+    }
+   
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -180,6 +253,18 @@ ul{
         height: 20em;
         padding-top: 2em;
     }
+    .f1{
+        text-align: start;
+        padding-left: 5em;
+    }
+    .f3{
+        text-align: end;
+        background-color:#2e3c44;
+        padding: 0;
+        padding-top: 2%;
+        padding-right: 1%;
+        font-size: 14px;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -188,7 +273,7 @@ ul{
         text-align: left;
         color: #eef2e0;
         padding-left: 3em;
-        padding-top: 9em;
+        padding-top: 8em;
     }
     div a{
         color: #eef2e0;
@@ -199,11 +284,15 @@ ul{
     div p{
         color: #eef2e0;
         text-align: left;
-        line-height: .01;
+        line-height: .01em;
         /* background-color: brown */
     }
     .abt{
         height: 20em;
+    }
+    .f3{
+        background-color:#2e3c44;
+        padding-top: 1.5em;
     }
   } 
   

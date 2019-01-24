@@ -53,41 +53,41 @@ class Main extends Component {
               <Col xsHidden md={3}>
               </Col>
             </Row>
-    <div>
-      <div>
-      <div className="col-xs-4 col-sm-4 col-md-4 f">
-      &copy; 2019 All rights reserved.
-      </div>
-
-      <div className="col-xs-4 col-sm-4 col-md-4 fl">
-      <img src={img} className="img" alt="" />       
-      </div>
-      
-      <div className="col-xs-4 col-sm-4 col-md-4 socialicon">
-      <ul>
-      <li>
+{/* footer */}
+<Row className="footer show-grid">
+    
+    <Col xs={6} sm={4} md={4} className="f1">
+     <img src={img} className="img" alt="" />             
+    </Col>
+    <div className="socialI">
+      <Col xs={6} sm={4} md={4} className="f2">
+        <ul>
+          <li>
             <a href="https://www.instagram.com/motasimfoad/" className="insta">
             <FontAwesomeIcon icon={faTwitter} />
-              </a>      
-            </li>
-      <li>
+            </a>      
+          </li>
+
+          <li>
             <a href="https://www.instagram.com/motasimfoad/" className="insta">
             <FontAwesomeIcon icon={faInstagram} />
-              </a>      
-            </li>
+            </a>      
+          </li>
 
-              <li>
-              <a href="https://www.instagram.com/motasimfoad/" className="fb">
-              <FontAwesomeIcon icon={faFacebookF} />
-              </a>      
-            </li>
-           
-      </ul>
-      </div>
-      </div>
-    
+          <li>
+            <a href="https://www.instagram.com/motasimfoad/" className="fb">
+            <FontAwesomeIcon icon={faFacebookF} />
+            </a>      
+            </li>    
+        </ul>
+      </Col>
     </div>
-
+    <Col xs={12} sm={4} md={4} className="f3">
+      &copy; 2019 All rights reserved
+    </Col>
+ 
+  </Row>
+   
       </div>
     );
   }
