@@ -18,7 +18,7 @@ class Main extends Component {
       <div>
            <Helmet>
             <meta charSet="utf-8" />
-            <title>Main</title>
+            <title>Breakdown</title>
         </Helmet>
 
           <div className="big">
@@ -55,15 +55,17 @@ class Main extends Component {
             </Row>
 {/* footer */}
 <Row className="footer show-grid">
-    
-    <Col xs={6} sm={4} md={4} className="f1">
+    <Col xs={12} sm={4} md={4} className="f1">
+      &copy; 2019 All rights reserved
+    </Col>
+    <Col xs={6} sm={4} md={4} className="f2">
      <img src={img} className="img" alt="" />             
     </Col>
     <div className="socialI">
-      <Col xs={6} sm={4} md={4} className="f2">
+      <Col xs={6} sm={4} md={4} className="f3">
         <ul>
           <li>
-            <a href="https://www.instagram.com/motasimfoad/" className="insta">
+            <a href="https://www.instagram.com/motasimfoad/" className="twit">
             <FontAwesomeIcon icon={faTwitter} />
             </a>      
           </li>
@@ -82,9 +84,7 @@ class Main extends Component {
         </ul>
       </Col>
     </div>
-    <Col xs={12} sm={4} md={4} className="f3">
-      &copy; 2019 All rights reserved
-    </Col>
+  
  
   </Row>
    

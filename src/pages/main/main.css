@@ -76,31 +76,22 @@ div a:hover{
     top: 0;
     bottom: 0;
 }
+.f1{
+    height: 100%;
+    background-color: #ff8c00;
+    padding: 0%;
+    
+}
+.f2{
+    height: 100%;
+}
+.f3{
+    height: 100%;
+}
 .img{
     width: 12vw;
     height: 6vh;
     padding-top: 4%;
-}
-
-.f{
-    background-color: #2e3c44;
-    font-size: 1em;
-    height:5em;
-    padding-top:1.5%;
-    color: #b1b3ac;
-    
-}
-.fl{
-    background-color: #2e3c44;
-    height:5em;    
-    padding-top: 1.2%;
-    text-align: center;
-}
-.socialicon{
-    background-color: #2e3c44;
-    height:5em;    
-    padding-top:.5%;
-    color: #ffffff;
 }
 ul{
     padding: 0%;
@@ -148,16 +139,16 @@ ul{
     .footer{
         height: 4em;
     }
-    .f1{
+    /* .f1{
         color: #b1b3ac; 
         height: 4em; 
         background-color:#2e3c44;
-    }
+    } */
     .img{
         width: 8em;
         height: 3em;
     }
-    .f2{
+    /* .f2{
         background-color: #2e3c44;  
         height: 4em;
         padding-left: 0%; 
@@ -176,7 +167,7 @@ ul{
         padding-top: 2.5%;
         text-align: center;
         font-size: 13px;
-    }
+    } */
    
   }
   
@@ -197,12 +188,10 @@ ul{
         line-height: .01;
     }
     .footer{
-        background-color: #ff8c00;
         height: 4em; 
     }
-    .f1{
+    /* .f1{
         color: #b1b3ac; 
-        text-align: center;
         height: 4em; 
         background-color: #2e3c44;
         padding-top: 0;
@@ -231,7 +220,7 @@ ul{
         padding-top: 2.5%;
         font-size: 14px;
     }
-   
+    */
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
@@ -253,7 +242,7 @@ ul{
         height: 20em;
         padding-top: 2em;
     }
-    .f1{
+    /* .f1{
         text-align: start;
         padding-left: 5em;
     }
@@ -264,7 +253,7 @@ ul{
         padding-top: 2%;
         padding-right: 1%;
         font-size: 14px;
-    }
+    } */
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -290,10 +279,10 @@ ul{
     .abt{
         height: 20em;
     }
-    .f3{
+    /* .f3{
         background-color:#2e3c44;
         padding-top: 1.5em;
-    }
+    } */
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
