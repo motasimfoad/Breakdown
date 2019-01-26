@@ -31,11 +31,11 @@ class Main extends Component {
           
           <img src={pic} className="pic " alt="" /> 
           <div>
-            <div className="ls">
+            <div className="ls col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <h2><b>GET PRODUCTIVE</b></h2><br />
               <p><a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a></p><br />
             </div>
-            <div className="form">
+            <div className="form col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <div class="formChange">
                 <a href="#" className="formChange-item">Login</a>
                 <a href="#" className="formChange-item formChange-item-Active">Register</a>
@@ -44,6 +44,10 @@ class Main extends Component {
                 <Button bsStyle={"background-color:pink"} className="button">Left</Button>
                 <Button className="button button-active">Right</Button>
               </ButtonGroup> */}
+              {/* form links */}
+              <div className="formTitle">
+              <a href="#" className="formTitle-link">Login</a> or <a href="#" className="formTitle-link formTitle-link-active">Register</a>
+              </div>
             </div>
           </div>  
 
