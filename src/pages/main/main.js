@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 import '../main/main.css';
-import {Row,Col} from "react-bootstrap";
+import {Row,Col,Button,ButtonGroup} from "react-bootstrap";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -13,6 +13,12 @@ import img from './flogo.png';
 library.add(faAngleDown,fab );
 
 class Main extends Component {
+  // state ={
+  //   name:"",
+  //   email:"",
+  //   password:"",
+  //   phone:"",
+  // }
   render() {
     return (
       <div>
@@ -24,15 +30,22 @@ class Main extends Component {
           <div className="big">
           
           <img src={pic} className="pic " alt="" /> 
-
-          <Row className="show-grid">
-            <Col md={6} mdPush={6} className="ls">
+          <div>
+            <div className="ls">
               <h2><b>GET PRODUCTIVE</b></h2><br />
               <p><a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a></p><br />
-            </Col>
-            <Col md={6} mdPull={6}>
-            </Col>
-          </Row>
+            </div>
+            <div className="form">
+              <div class="formChange">
+                <a href="#" className="formChange-item">Login</a>
+                <a href="#" className="formChange-item formChange-item-Active">Register</a>
+              </div>
+              {/* <ButtonGroup>
+                <Button bsStyle={"background-color:pink"} className="button">Left</Button>
+                <Button className="button button-active">Right</Button>
+              </ButtonGroup> */}
+            </div>
+          </div>  
 
             <div className="icon">
               <FontAwesomeIcon icon={faAngleDown}/>
