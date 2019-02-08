@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route,Link} from "react-router-dom";
+import signupform from './signupform.js';
 import {Helmet} from "react-helmet";
 import '../main/main.css';
 import {Row,Col,Button,ButtonGroup} from "react-bootstrap";
@@ -8,6 +10,8 @@ import { fab, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-bran
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import pic from './logo.png';
 import img from './flogo.png';
+import login from './login.js';
+
 
 
 library.add(faAngleDown,fab );
@@ -21,42 +25,49 @@ class Main extends Component {
   // }
   render() {
     return (
+      <Router>
       <div>
            <Helmet>
             <meta charSet="utf-8" />
             <title>Breakdown</title>
         </Helmet>
 
-          <div className="big">
-          
-          <img src={pic} className="pic " alt="" /> 
-          <div>
-            <div className="ls col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <h2><b>GET PRODUCTIVE</b></h2><br />
-              <p><a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a></p><br />
-            </div>
-            <div className="form col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <div class="formChange">
-                <a href="#" className="formChange-item">Login</a>
-                <a href="#" className="formChange-item formChange-item-Active">Register</a>
-              </div>
-              {/* <ButtonGroup>
-                <Button bsStyle={"background-color:pink"} className="button">Left</Button>
-                <Button className="button button-active">Right</Button>
-              </ButtonGroup> */}
-              {/* form links */}
-              <div className="formTitle">
-              <a href="#" className="formTitle-link">Login</a> or <a href="#" className="formTitle-link formTitle-link-active">Register</a>
-              </div>
-            </div>
-          </div>  
+<div className="big">
+  <img src={pic} className="pic " alt="" /> 
+    <div >
+      <div className="ls col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h2><b>GET PRODUCTIVE</b></h2><br />
+        <p><a href="http://localhost:3000/auth">LOGIN</a> OR <a href="http://localhost:3000/auth">SIGN UP</a></p><br />
+      </div>
 
-            <div className="icon">
-              <FontAwesomeIcon icon={faAngleDown}/>
-              {/* <a href="#about"><FontAwesomeIcon icon={faAngleDown}/></a> */}
-            </div>
-
+      <div className="form col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div className="App__Form">
+          <div className="PageSwitcher">
+            <a href="#" className="PageSwitcher__Item">Sign Up</a>
+            <a href="#" className="PageSwitcher__Item PageSwitcher__Item--Active">Login</a>
           </div>
+          <div className="FormTitle">
+          <Link to="/login" className="FormTitle__Link">Login</Link>
+          or<Link to="/" className="FormTitle__Link FormTitle__Link--Active">Sign Up</Link>
+          </div>
+          <Route path="/login" component={login}>
+          <h1>login</h1>
+            
+          </Route>
+          <Route  exact path="/" component={signupform}>
+  
+          </Route>
+          
+        </div>
+      </div>
+    </div>  
+
+    <div className="icon">
+      <FontAwesomeIcon icon={faAngleDown}/>
+      {/* <a href="#about"><FontAwesomeIcon icon={faAngleDown}/></a> */}
+    </div>
+
+</div>
 
 {/* about section */} 
           <Row className="abt show-grid">
@@ -106,6 +117,7 @@ class Main extends Component {
   </Row>
    
       </div>
+      </Router>
     );
   }
 }
