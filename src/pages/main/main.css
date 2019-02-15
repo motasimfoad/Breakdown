@@ -21,7 +21,7 @@
     padding-top: 8%;
     padding-left: 5%;  
     line-height: .01;
-    background-color: #297aac;
+    /* background-color: #ffffff; */
     text-decoration: none;
     text-align: left;
     height: 80vh;
@@ -52,59 +52,33 @@ div a:hover{
 }
 /* form */
 .form{
-    background-color: #b1b3ac;
-    /* width: 50%; */
+    /* background-color: #b1b3ac; */
+    width: 50%;
     height: 80vh;
     float: left;
     overflow: auto;
+    padding-top: 4em;
 }
-.PageSwitcher {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20%;
-  }
-  .PageSwitcher__Item {
-    background-color: #4C5D72;
-    color: #9DA6B1;
-    padding: 10px 25px;
-    cursor: pointer;
-    font-size: 1em;
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .PageSwitcher__Item--Active {
-    background-color: #5ED0C0;
-    color: white;
-  }
-  
-  .PageSwitcher__Item:first-child {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-  }
-  .PageSwitcher__Item:last-child {
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-  }
-  .FormCenter {
+
+  /* .FormCenter {
     margin-bottom: 100px;
-  }
+  } */
   
   .FormTitle {
-    color: #707C8B;
-    font-weight: 300;
-    margin-bottom: 50px;
+    color: rgb(214, 214, 214);
+    /* font-weight: 300; */
+    margin-bottom: 20px;
+    padding-top: 10px;
+    /* background-color: rgb(159, 128, 190); */
   }
-  
+  /* Login & sign up switch */
   .FormTitle__Link {
-    color: #707C8B;
+    color: #ff8c00;
     text-decoration: none;
     display: inline-block;
     font-size: 1.7em;
     margin: 0 10px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
   
   .FormTitle__Link:first-child {
@@ -113,11 +87,12 @@ div a:hover{
   
   .FormTitle__Link--Active {
     color: white;
-    border-bottom: 1px solid #199087;
+    /* border-bottom: 1px solid #199087; */
   }
   
   .FormField {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    /* background-color: rosybrown; */
   }
   
   .FormField__Label {
@@ -125,43 +100,68 @@ div a:hover{
     text-transform: uppercase;
     font-size: .9em;
     color: white;
+    /* background-color: darkgoldenrod; */
   }
   .FormField__Input {
     width: 85%;
-    background-color: transparent;
+    background-color: #eef2e07a;
     border: none;
-    color: white;
+    color: #405867;
     outline: none;
-    border-bottom: 1px solid #445366;
-    font-size: 1em;
-    font-weight: 300;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    border-bottom: 1px solid #eef2e07a;
+    font-size: 15px;
+    /* font-weight: 300; */
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: .7em;
   }
   
   .FormField__Input::placeholder {
-    color: #616E7F;
+    color: #405867;
+  }
+  .FormField__CheckboxLabel {
+    color: #405867;
+    font-size: 1em;
+    float: left;
+    text-align: left;
+    padding-left: 3.5em;
+    padding-bottom: 1.5em;
+    width : 85%;
+    /* background : red; */
   }
   
+  .FormField__Checkbox {
+    position: relative;
+    top: 1.5px;
+  } 
   .FormField__Button {
-    background-color: #52C4B9;
-    color: white;
+    background-color: #405867;    
+    color: #eef2e0;
     border: none;
     outline: none;
     border-radius: 25px;
     padding: 15px 70px;
-    font-size: .8em;
-    font-weight: 500;
+    font-size: 1em;
+    margin-right: 2em;
   }
   
   .FormField__Link {
-    color: #66707D;
+    color: #405867;
     text-decoration: none;
     display: inline-block;
-    border-bottom: 1.5px solid #225E62;
+    font-size: 1.1em;
+    /* border-bottom: 2px solid #225E62; */
     padding-bottom: 5px;
   }
-  
+  .FormField__TermsLink {
+    color: #405867;
+    /* border-bottom: 1px solid #199087; */
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-left: 5px;
+  }
 
 /* about us */
 .abt{

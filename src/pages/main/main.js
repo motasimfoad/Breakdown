@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route,Link} from "react-router-dom";
+import { BrowserRouter as Router, Route,NavLink} from "react-router-dom";
 import signupform from './signupform.js';
+import login from './login.js';
 import {Helmet} from "react-helmet";
 import '../main/main.css';
-import {Row,Col,Button,ButtonGroup} from "react-bootstrap";
+import {Row,Col} from "react-bootstrap";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab, faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import pic from './logo.png';
 import img from './flogo.png';
-import login from './login.js';
 
 
 
 library.add(faAngleDown,fab );
 
 class Main extends Component {
-  // state ={
-  //   name:"",
-  //   email:"",
-  //   password:"",
-  //   phone:"",
-  // }
   render() {
     return (
       <Router>
@@ -42,21 +36,17 @@ class Main extends Component {
 
       <div className="form col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div className="App__Form">
-          <div className="PageSwitcher">
-            <a href="#" className="PageSwitcher__Item">Sign Up</a>
-            <a href="#" className="PageSwitcher__Item PageSwitcher__Item--Active">Login</a>
-          </div>
           <div className="FormTitle">
-          <Link to="/login" className="FormTitle__Link">Login</Link>
-          or<Link to="/" className="FormTitle__Link FormTitle__Link--Active">Sign Up</Link>
+          <NavLink to="/login" activeClassName="FormTitle__Link--Active" className="FormTitle__Link">Login</NavLink>
+          or<NavLink exact to="/" activeClassName="FormTitle__Link--Active" className="FormTitle__Link">Sign Up</NavLink>
           </div>
-          <Route path="/login" component={login}>
-          <h1>login</h1>
-            
-          </Route>
           <Route  exact path="/" component={signupform}>
   
           </Route>
+          <Route path="/login" component={login}>
+          
+          </Route>
+          
           
         </div>
       </div>
